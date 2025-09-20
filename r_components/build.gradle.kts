@@ -44,6 +44,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.compose.runtime)
+    implementation(libs.androidx.compose.foundation)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -55,9 +56,9 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     debugImplementation(libs.androidx.compose.ui.tooling)
 
-    //Coil
-    implementation(libs.coil)
-    implementation(libs.coil.compose)
+//    //Coil
+//    implementation(libs.coil)
+//    implementation(libs.coil.compose)
 
     // Material3
     implementation(libs.androidx.material3)
