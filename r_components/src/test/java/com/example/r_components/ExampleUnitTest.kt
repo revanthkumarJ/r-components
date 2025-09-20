@@ -1,4 +1,4 @@
-package com.example.my_library
+package com.example.r_components
 
 import org.junit.Test
 
