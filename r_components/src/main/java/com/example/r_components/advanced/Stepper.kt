@@ -105,7 +105,8 @@ fun Stepper(
                                     .background(
                                         when {
                                             index == currentIndex -> Color.White
-                                            else -> unSelectedStepperColor ?: MaterialTheme.colorScheme.secondary
+                                            else -> unSelectedStepperColor
+                                                ?: MaterialTheme.colorScheme.secondary
                                         },
                                     )
                                     .clickable(enabled = index < currentIndex) {
@@ -116,7 +117,9 @@ fun Stepper(
                                 Text(
                                     text = (index + 1).toString(),
                                     color = when {
-                                        index == currentIndex -> stepperColor ?: MaterialTheme.colorScheme.primary
+                                        index == currentIndex -> stepperColor
+                                            ?: MaterialTheme.colorScheme.primary
+
                                         else -> Color.White
                                     },
                                 )
