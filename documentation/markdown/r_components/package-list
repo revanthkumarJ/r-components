@@ -1,0 +1,5 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.example.r_components////PointingToDeclaration/r_components/com.example.r_components/index.md
+$dokka.location:com.example.r_components//StartingComponent/#kotlin.String/PointingToDeclaration/r_components/com.example.r_components/-starting-component.md
+com.example.r_components

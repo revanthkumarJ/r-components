@@ -63,3 +63,25 @@ publishing {
     }
 }
 
+tasks.dokkaHtml {
+    outputDirectory.set(rootDir.resolve("documentation/html"))
+    dokkaSourceSets {
+        configureEach {
+            includeNonPublic.set(false)
+            skipEmptyPackages.set(true)
+            reportUndocumented.set(true)
+        }
+    }
+}
+
+tasks.dokkaGfm {
+    outputDirectory.set(rootDir.resolve("documentation/markdown"))
+    dokkaSourceSets {
+        configureEach {
+            includeNonPublic.set(false)
+            skipEmptyPackages.set(true)
+            reportUndocumented.set(true)
+        }
+    }
+}
+
